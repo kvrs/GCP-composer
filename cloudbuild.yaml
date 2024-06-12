@@ -1,8 +1,13 @@
 steps:
-  # Install dependencies
-  - name: python
-    entrypoint: pip
-    args: ["install", "-r", "requirements.txt", "--user"]
+  # Step 1: Setup environment and install dependencies
+  - name: 'python'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        pip install apache-beam[gcp]
+
+  # Step 2: Execute your Python script
   - name: 'python'
     entrypoint: 'python'
     args: ['apache.py']
