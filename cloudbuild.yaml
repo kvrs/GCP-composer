@@ -6,8 +6,9 @@ steps:
       - '-c'
       - |
         pip install apache-beam[gcp]
+        python apache.py
 
   # Step 2: Execute your Python script
-  - name: 'python'
-    entrypoint: 'python'
-    args: ['apache.py']
+  # - name: 'python'
+  #   entrypoint: 'python'
+  #   args: ['apache.py']
