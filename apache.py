@@ -1,1 +1,2 @@
-# create beam template
+# create beam template 
+print('hello world')
