@@ -5,7 +5,7 @@ on:
     branches:
       - dev
     paths:
-    - 'python.py'
+    - 'apache.py'
 jobs:
   trigger_builds:
     runs-on: ubuntu-latest
